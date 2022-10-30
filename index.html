@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valkyrie.gg</title>
     <link rel="stylesheet" href="../PROJECT1/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
@@ -25,10 +28,10 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Teams</a>
                   <a class="nav-link" href="#">Schedule</a>
+                  <a class="nav-link" href="#">Teams</a>
                   <a class="nav-link" href="#">Partners</a>
+                  <a class="nav-link" href="#">Careers</a>
                   <a class="nav-link" href="#">Contact</a>
                 </div>
               </div>
@@ -137,45 +140,51 @@
         </div>
       </div>
 
-       
+     <!--Partners-->  
+     <div class="main-carousel">
+        <h2 class="text-center font-weight-bold mb-5 mt-5"> Together we make the dream come true</h2>
+        <section class="customer-logos slider">
+          <div class="slide">
+            <a href="https://www.budlight.com/" target="_blank">
+              <img src="./images/budlight.png">
+            </a>         
+          </div>
+          <div class="slide"><a href="https://www.grab.com/ph/" target="_blank">
+            <img src="./images/grab.png">
+          </a>
+          </div>
+          <div class="slide"><a href="https://www.nike.com/ph/" target="_blank">
+            <img src="./images/nike.png">
+          </a>
+          </div>
+          <div class="slide"><a href="https://www.acer.com/us-en/predator"      target="_blank">
+            <img src="./images/predator.png">
+          </a>
+          </div>
+          <div class="slide"><a href="https://www.redbull.com/ph-en/" target="_blank">
+            <img src="./images/redbull.png">
+          </a>
+          </div>
+          <div class="slide"><a href="https://secretlab.sg/" target="_blank">
+            <img src="./images/Secretlab.png">
+          </a>
+          </div>
+          <div class="slide"><a href="https://sv.steelseries.com/" target="_blank">
+            <img src="./images/steelseries.png">
+          </a>
+          </div>
+  
+        </section>
+
+        <section class="customer-logos slider">
+
+        </section>
+
+    </div>
+     
     </section>
 
-    <section>
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/Secretlab.png" class="d-block w-100" >
-            <img src="./images/budlight.png" class="d-block w-100" >
-            <img src="./images/predator.png" class="d-block w-100" >
-            <img src="./images/redbull.png" class="d-block w-100" >
-        
-          </div>
-          <div class="carousel-item">
-            <img src="./images/bmw.png" class="d-block w-100" alt="...">
-            <img src="./images/steelseries.png" class="d-block w-100" alt="...">
-            <img src="./images/nike.png" class="d-block w-100" >
-            <img src="./images/grab.png" class="d-block w-100" >
-          </div>
-          
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    </section>
-
-
-
-
-
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -193,7 +202,32 @@
 
     </script>
 
-    <!--Nav bar transparent-->
+    <!--Carousel script -->
+
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        respndisve: [{
+          breakpoiont: 768,
+          setting: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoiont: 520,
+          setting: {
+            slideToShow: 3
+          }
+        }]
+      });
+     });
+    </script>
    
 
 </body>

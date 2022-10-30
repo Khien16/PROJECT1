@@ -322,6 +322,8 @@ button:hover {
     text-shadow: 0px 0px 5px rgba(13,18,35,255) ;
     font-size: 55px;
     text-transform: uppercase;
+    margin-bottom: 35px;
+   
 }
 
 
@@ -333,3 +335,81 @@ html, body {
     padding: 0px;
     overflow-x: hidden;
 }
+ /* End of Teams */
+
+ /* Partners*/
+
+ .main-carousel {
+    background: rgba(29,33,52,255);
+ } 
+
+
+ h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0 0 3px;
+   
+ }
+
+ .slick-slide {
+    margin: 0 20px;
+   
+ }
+
+ .slick-slide img{
+    width: 50%;
+    height: 100%;
+ }
+
+ .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+ }
+
+ .slick-list {
+    
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: space-around;
+ }
+
+ .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+ }
+
+ .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+ }
+
+ .slick-slide img{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-right: 25px;
+    overflow: hidden;
+    
+ }
+
+ .slick-initialized .slick-slide {
+    display: block;
+ }
+
+ .copy {
+    padding-top: 50px;
+ }
+
+ /*End of partners*/
+ 
