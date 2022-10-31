@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins&family=Six+Caps&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/*1st page*/
+
+nav {
+    background: #242424;   
+    
+}
+
+header img {
+    
+    width: 65px;
+    height: 65px;
+    margin-right: 50px;
+    margin-left: 25px;
+}
+
+
+.navbar-nav a{
+    text-shadow: 2px;   
+    display: flex;
+    font-family:'Nunito', sans-serif;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    color: #ffff;
+    text-decoration: none;
+    
+
+}
+
+.social-icon a{
+    text-decoration: none;
+}
+.social-icon ion-icon{ 
+    color: white;
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    
+}
+
+/*End of 1st page*/
+
+/*About Me*/
+.main{
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/LAND.png);
+    width: auto;
+    background-size: cover;  
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.overlay h1{
+    display: flex;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 110px;
+    color: white;
+    font-family:'Six Caps', sans-serif;
+    justify-content: flex-start;
+    text-decoration: underline #424254;
+    
+}
+
+.overlay p{
+    display: flex;
+    text-align: center;
+    font-size: 120px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    margin-left: 200px;
+    color: #424254;
+    margin-bottom: 0px;
+    text-shadow: 0px 0px 4px;
+
+}
+
+.overlay h2{
+    display: flex;
+    text-align: center;
+    font-size: 150px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    margin-left: 90px;
+    color:   #c28f23;
+    margin-top: 0px;
+    text-shadow: 3px 0 0 ;
+
+}
+
+
+
+
+.Container-fluid {
+    display: flex;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    height: 30vh;
+    margin-top: 100px;
+   
+
+}
+
+.Container-fluid h1{
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+.Container-fluid p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    
+}
+
+.Container-fluid img {
+    height: 13rem;
+    width: 13rem;
+   
+ 
+}
+
+.Container-fluid .text{
+    display: flex;
+    flex-direction: column;
+}
+
+/* buttons*/
+
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    width: 10rem;
+   }
+   
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+button:hover::before {
+    width: 105%;
+}
+   
+button:hover {
+    color: #111;
+}
+
+   /*End of button*/
+
+   /*Schedule*/
+
+.schedule {
+    display: flex;
+    position: relative;
+    height: 60vh;
+    background-color:rgba(13,18,35,255);
+    clip-path: polygon(100% 0,0 100%,100%);
+    flex-direction: column;
+    
+}
+
+
+.schedule h2{
+    font-size: 20px;
+    color: #3C96CF;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0;
+}
+
+.schedule h1 {
+    font-size: 100px;
+    margin-left: 90px;
+    font-family: 'Bangers', cursive;;
+    color: white;
+    margin-bottom: 35px;
+    
+}
+
+.schedule p{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 100px;
+
+}
+
+/* Schedule button*/
+
+.schedule button {
+   
+    padding: 0.8em 1.8em;
+    border: 2px solid white;
+    overflow: hidden;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-top: 70px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: white;
+    width: 10rem;
+   }
+   
+.btn2::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+    
+}
+   
+.btn2:hover::before {
+    width: 105%;
+}
+   
+.btn2:hover {
+    color: white;
+}
+
+
+   /*End of button*/
+
+
+   /*Teams*/
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: white;
+    
+}   
+
+
+.flex-box img{
+    align-items: center;
+    height: 425px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 50px black;
+    filter: grayscale();
+    transition: filter 0.4s ease-in-out;
+}
+.flex-box img:hover {
+    filter: none;
+}
+
+.flex-box img:hover {
+    cursor: pointer;
+}
+
+.team {
+    background: white;
+    height: 60vh;
+    
+
+}
+.team h1{  
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(13,18,35,255) ;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+   
+}
+
+
+    
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+ /* End of Teams */
+
+ /* Partners*/
+
+ .main-carousel {
+
+    background: rgba(29,33,52,255);
+    height: 30vh;
+    
+ } 
+
+
+ h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 0 0 3px;
+   
+ }
+
+ .slick-slide {
+    margin: 0 20px;
+   
+ }
+
+ .slick-slide img{
+    width: 50%;
+    height: 100%;
+ }
+
+ .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+ }
+
+ .slick-list {
+    
+    position: relative;
+    display: block;
+    overflow: hidden;
+    
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: space-around;
+ }
+
+ .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+ }
+
+ .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+ }
+
+ .slick-slide img{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-right: 25px;
+    overflow: hidden;
+    
+ }
+
+ .slick-initialized .slick-slide {
+    display: block;
+ }
+
+ .copy {
+    padding-top: 50px;
+ }
+
+ /*End of partners*/
+ 
+ /*Footer*/
+
+
+
+ footer .Container-fluid {
+    background: radial-gradient(313.01px at 51.23% 0,#23293b 0,#0f111a 100%),#12151e;
+    margin-top: 0;
+    height: 55vh;
+   
+
+    
+ }
+
+ .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 100px;
+ }
+
+
+ .footer ul {
+    list-style: none;
+   
+ }
+
+ .footer h4 {
+    color: white;
+    text-align: start;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+ .footer h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background: #e91e64;
+    bottom: -10px;
+ }
+
+ .footer ul li{
+    padding: 10px 0;
+ }
+
+ .footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+ }
+
+ .footer ul li a:hover{
+    opacity: 1;
+ }
+
+ .footer input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+ }
+
+ .footer .input-submit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+ }
+
+ 
+ .col p {
+    font-size: 17px;
+    color: white;
+    font-style: normal!important;
+
+ }
+
+ .row hr {
+    opacity: 0.7;
+    color: gray;
+ }
+
+
+
+
+
+ /*End of footer*/
+ 
