@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valkyrie.gg</title>
-    <link rel="stylesheet" href="../PROJECT1/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
     <header>
 
-        <nav class="navbar fixed-top navbar-expand-lg">
+        <nav class="navbar  navbar-expand-lg">
 
             <div class="container-fluid">
 
               <!--LOGO-->
-              <img src="../PROJECT1/images/Logomainw.png" alt="logo">
-
+              
               <!--Menu-->
-
+              <a class="navbar-brand" href="./index.html"><img src="../PROJECT1/images/Logomainw.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" href="#">Home</a>
-                  <a class="nav-link" href="#">Schedule</a>
-                  <a class="nav-link" href="#">Teams</a>
-                  <a class="nav-link" href="#">Partners</a>
+                  <a class="nav-link" href="./index.html">Home</a>
+                  <a class="nav-link" href="./schedule.html">Schedule</a>
+                  <a class="nav-link" href="./teams.html" >Teams</a>
+                  <a class="nav-link" href="./partner.html">Partners</a>
                   <a class="nav-link" href="#">Careers</a>
                   <a class="nav-link" href="#">Contact</a>
                 </div>
@@ -71,8 +75,7 @@
     </header>
 
     <!--Main Display-->
-    <div class="main">
-      
+    <div class="main">     
       <div class="overlay">
             <h1>VALKYRIE &nbsp;
               <span style="color: #D4D4D4">ESPORTS</span>
@@ -97,7 +100,7 @@
           <p> Rooted in our legacy of raising trophies and inspired </br>
           by our passion for victory, we are the VALKYRIES.</p>
 
-          <button> EXPLORE </button>
+          <button class="explore"> EXPLORE </button>
         </div>
 
       </div>
@@ -106,13 +109,15 @@
       <!--Reserved for Schedule-->
 
       <div class="schedule">
-        <h2>WATCH VALKYRIES IN ACTION</h2>
+        <h2 class="text-start">WATCH VALKYRIES IN ACTION</h2>
         <h1>CHECK OUT OUR SCHEDULE</h1>
         <p>No upcoming events. Check back soon!</p>
-        <button class="btn2"> EXPLORE </button>
+
+        <a href="./schedule.html" target="_blank"><button class="explore"> EXPLORE </button></a>
+        
 
       </div>
-       <!--Reserved for Schedule-->
+       <!--End of  Schedule-->
 
        <!--Teams-->
 
@@ -123,18 +128,18 @@
       
           <div class="flex-box"> 
 
-            <a href="#" target="_blank"><img src="./images/dota.jpg"></a>
+            <a href="./dota.html" ><img src="./images/dota.jpg"></a>
             
           </div>
 
           <div class="flex-box">
 
-            <a href="#" target="_blank"> <img src="./images/csgo.jpg"></a>
+            <a href="./csgo.html" > <img src="./images/csgo.jpg"></a>
             </div>
 
           <div class="flex-box"> 
 
-            <a href="#" target="_blank"> <img src="./images/valorant.jpg"></a>
+            <a href="./valorant.html" > <img src="./images/valorant.jpg"></a>
           </div>
 
         </div>
@@ -180,6 +185,8 @@
 
         </section>
 
+        <!--footer-->
+
         <footer>
           <div class="Container-fluid text-start">
             <div class="row align-items-start">
@@ -198,10 +205,10 @@
               <div class="footer col">
                 <ul>
                   <h4>Company</h4>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Schedule</a></li>
-                  <li><a href="">Teams</a></li>
-                  <li><a href="">Partners</a></li>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+                  <li><a href="./teams.html" >Teams</a></li>
+                  <li><a href="./partner.html">Partners</a></li>
                   <li><a href="">Careers</a></li>
                   <li><a href="">Contact</a></li>
                 </ul>

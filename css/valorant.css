@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins&family=Six+Caps&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*1st page*/
+nav {
+  background: #242424;
+
+}
+
+header img {
+  width: 65px;
+  height: 65px;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.navbar-nav a {
+  text-shadow: 2px;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  justify-content: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.social-icon ion-icon {
+  color: white;
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+}
+
+/*Dota 2*/
+
+
+    /* background: rgba(21,21,33,255); */
+
+section{
+    min-height: 100vh;
+    background-color:rgba(21,21,33,255);
+    
+}
+
+.dota img{
+    height: 400px;
+    width: 650px;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 650px;
+    
+}
+    
+.image-area
+{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+}
+    
+.img-wrapper
+{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 50px;
+    border-radius: 10px;
+    background: linear-gradient(206deg,#23293b 5.4%,#3e101e 123.45%);
+    transition: all .3s ease;
+    
+}
+    
+.img-wrapper:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease;
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+    
+}
+    
+.img-wrapper:hover:before
+{
+    left: -180%;
+}
+    
+.img-wrapper img
+{
+    height: 350px;
+    width: 300px;
+    margin-right: 20px;
+    transition: 2s;
+  
+    
+}
+
+.img-wrapper:hover img
+{
+    transform: scale(1.1);
+    background: linear-gradient(206deg,#23293b 5.4%,#6c5700 123.45%);
+    
+}
+    
+.img-wrapper h2
+{
+    background: tomato;
+    font-family: Poppins;
+    font-weight: bolder ;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+}
+    
+.img-wrapper:hover h2
+{
+    transform: perspective(400px) rotateY(0deg);
+}
+    
+.img-wrapper ul
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255,255,255,0);
+}
+    
+.img-wrapper ul li
+{
+    background: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+}
+    
+.img-wrapper:hover ul li
+{
+    transform: perspective(800px) rotateY(0deg);
+}
+    
+.img-wrapper:hover ul li:nth-child(1)
+{
+    transition-delay: .2s;
+}
+    
+.img-wrapper:hover ul li:nth-child(2)
+{
+     transition-delay: .6s;
+}
+    
+.img-wrapper:hover ul li:nth-child(3)
+{
+    transition-delay: .8s;
+}
+    
+.img-wrapper:hover ul li:nth-child(4)
+{
+     transition-delay: 1s;
+}
+    
+.img-wrapper ul li a
+{
+    color: tomato;
+    background: rgba(255,255,255,0);
+}
+    
+.img-wrapper ul li i
+{
+    color: tomato;
+    background: rgba(255,255,255,0);
+}
+    
+.img-wrapper ul li i:hover
+{
+    color: #fff;
+    background: rgba(255,255,255,0);
+}
+
+.role {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #11141d;
+    border-radius: 2px;
+    padding: 4px 7px;
+}
+
+/*Footer*/
+footer .Container-fluid {
+    background: radial-gradient(313.01px at 51.23% 0, #23293b 0, #0f111a 100%), #12151e;
+    margin-top: 0;
+    height: 55vh;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 100px;
+  }
+  
+  .footer ul {
+    list-style: none;
+  }
+  
+  .footer h4 {
+    color: white;
+    text-align: start;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .footer h4::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background: #e91e64;
+    bottom: -10px;
+  }
+  
+  .footer ul li {
+    padding: 10px 0;
+  }
+  
+  .footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  
+  .footer ul li a:hover {
+    opacity: 1;
+  }
+  
+  .footer input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+  }
+  
+  .footer .input-submit {
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+  }
+  
+  .col p {
+    font-size: 17px;
+    color: white;
+    font-style: normal !important;
+  }
+  
+  .row hr {
+    opacity: 0.7;
+    color: gray;
+  }
+  
+  /*End of footer*/
