@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins&family=Ropa+Sans&family=Six+Caps&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*1st page*/
+nav {
+  background: #242424;
+
+}
+
+header img {
+  width: 65px;
+  height: 65px;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+.navbar-nav a {
+  text-shadow: 2px;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  justify-content: flex-end;
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.social-icon ion-icon {
+  color: white;
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+}
+
+/*Contact Us*/
+
+.top img{
+    display: flex;
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.top h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    color: aliceblue;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 130px;
+    font-weight: bold;
+    text-shadow: 0 0 15px black;
+}
+
+.top h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0 0 15px black;
+    font-weight: normal;
+}
+
+/*main*/
+
+.contact {
+    display: block;
+    margin-top: 80px;
+    height: 80vh;
+    background-color: rgba(21,21,33,255);
+}
+
+.container{
+    margin-top: 100px;
+    width: 85%;
+    background: rgba(39,46,62,255);
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content .left-side{
+   
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: gray;
+    box-shadow: 0 0 10px black;
+  }
+
+  .content .left-side .topic-text{
+    font-family: "Titillium Web",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    color: #fff;
+    border-bottom: 2px solid #458644;
+    width: 125px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 45px;
+    margin-top: 2px;
+  }
+  
+ 
+.right-side form .row {
+    margin-top: 20px;
+}
+
+.right-side form label {
+    font-family: "Titillium Web",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #afafaf; 
+}
+.right-side form input {
+    border: 0;
+    border-bottom: 1px solid #4a5777;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    font-family: "Titillium Web",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+    line-height: 24px;
+    color: #6a6a6a;
+    box-sizing: border-box;
+    outline: 0;
+    background: 0 0;
+    color: #dadada;
+    
+}
+
+.right-side form textarea {
+    margin-top: 8px;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    font-family: "Titillium Web",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6a6a6a;
+    resize: none;
+    display: block;
+    width: 95%;
+    height: 180px;
+    outline: 0;
+    background: 0 0;
+    color: #dadada;
+}
+
+button {
+    padding: 1em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgba(46, 229, 157, 0.4);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;    
+  }
+  
+  button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 10px 15px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+  
+  /* @media (max-width: 950px) {
+    .container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container .content{
+      flex-direction: column-reverse;
+    }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  }
+   */
+
+   /*Footer*/
+footer .Container-fluid {
+    background: radial-gradient(313.01px at 51.23% 0, #23293b 0, #0f111a 100%), #12151e;
+    height: 55vh;
+}
+  
+footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 100px;
+}
+  
+.footer ul {
+    list-style: none;
+}
+  
+.footer h4 {
+    color: white;
+    text-align: start;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+}
+  
+.footer h4::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background: #e91e64;
+    bottom: -10px;
+}
+  
+.footer ul li {
+    padding: 10px 0;
+}
+  
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+  
+.footer ul li a:hover {
+    opacity: 1;
+}
+  
+.footer input {
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+  
+.footer .input-submit {
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+}
+  
+.col p {
+    font-size: 17px;
+    color: white;
+    font-style: normal !important;
+}
+  
+.row hr {
+    opacity: 0.7;
+    color: gray;
+}
+  
+  /*End of footer*/
